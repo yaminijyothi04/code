@@ -1,0 +1,6 @@
+def order_food(lst):
+    food_options_count = {}
+    for developer in lst:
+        meal_preference = developer['meal']
+        food_options_count[meal_preference] = food_options_count.get(meal_preference, 0) + 1
+    return food_options_count
